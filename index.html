@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">    
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+	<header>
+        
+        <input type="checkbox" id="check">
+        <label for="check" id="icone"></label>
+        <section class="barra">
+            <nav>
+                <a href="#"><section class="Link">Central</section></a>
+                <a href="pages/sobre.html"><section class="Link">Sobre Nós</section></a>
+                <a href="pages/ajuda.html#"><section class="Link">Ajuda</section></a>
+            </nav>
+        </section>
+        
+
+        <label for="menu-hamburguer">
+            <section id="menu-hamburguer">
+                <span class="hamburguer"></span>
+            </section>
+        </label>        
+    </header>
+    
+    <main class="container">
+        <section class="title">
+            <h1>Jogo da Velha 2.0</h1>
+        </section>
+        
+        <section class="tabuleiro">
+            <section class="grid" id="cel1" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel2" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel3" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel4" onclick="joga(this.id);testa()"></section>    
+            <section class="grid" id="cel5" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel6" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel7" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel8" onclick="joga(this.id);testa()"></section>
+            <section class="grid" id="cel9" onclick="joga(this.id);testa()"></section>
+        </section>       
+
+        <section>
+<button type="reset" id="teste" onclick="limpar();">Limpar</button>
+        </section>
+    </main>
+</body>
+
+<footer>
+    Made By Teixeira
+</footer>
+</html>
